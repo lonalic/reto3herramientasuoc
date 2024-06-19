@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Página de conciertos de la web no oficial del grupo La Oreja de Van Gogh"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <title>
+      Página de conciertos de la web no oficial del grupo La Oreja de Van Gogh
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body class="margins">
+    <include src="src/header.html"></include>
+    <main>
+      <section class="conciertos-lista">
+        <div>
+          <h1>Conciertos</h1>
+        </div>
+        <article id="barcelona">
+          <figure>
+            <picture>
+              <!-- Imagen en AVIF a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="
+                  ./images/conciertos/barcelona_466.jpeg?as=avif&width=330
+                "
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="
+                  ./images/conciertos/barcelona_466.jpeg?as=webp&width=330
+                "
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/barcelona_466.jpeg?width=330"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                srcset="./images/conciertos/barcelona_466.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                srcset="./images/conciertos/barcelona_466.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 466px -->
+              <source
+                srcset="./images/conciertos/barcelona_466.jpeg"
+                type="image/jpeg"
+              />
+
+              <img
+                src="./images/conciertos/barcelona_466.jpeg"
+                alt="Imagen del grupo cantando en Barcelona"
+              />
+            </picture>
+            <figcaption>© Bing Dall-E 3</figcaption>
+          </figure>
+          <div>
+            <h2>
+              <a href="./detalle-barcelona.html" title="Ir a artículo"
+                >Concierto en Barcelona</a
+              >
+            </h2>
+            <p>
+              En una noche de verano, las luces del Palau Sant Jordi iluminaron
+              el cielo mientras miles de fans se congregaban para presenciar el
+              legendario concierto de <em>La Oreja de Van Gogh</em>. Con un
+              repertorio repleto de éxitos como "Rosas" y "El Último Vals", el
+              grupo hizo vibrar al público catalán con su energía y pasión
+              inigualables.
+            </p>
+            <a
+              href="./detalle-barcelona.html"
+              title="Ir a artículo"
+              class="leer-mas"
+              >Leer más</a
+            >
+            <span class="autor">
+              Por Sergio Candela -
+              <time datetime="2021-11-15">15 de noviembre de 2023</time>
+            </span>
+          </div>
+        </article>
+        <article id="valencia">
+          <figure>
+            <picture>
+              <!-- Imagen en AVIF a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/valencia_466.jpeg?as=avif&width=330"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/valencia_466.jpeg?as=webp&width=330"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/valencia_466.jpeg?width=330"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                srcset="./images/conciertos/valencia_466.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                srcset="./images/conciertos/valencia_466.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 466px -->
+              <source
+                srcset="./images/conciertos/valencia_466.jpeg"
+                type="image/jpeg"
+              />
+
+              <img
+                src="./images/conciertos/valencia_466.jpeg"
+                alt="Imagen del grupo cantando en valencia"
+              />
+            </picture>
+            <figcaption>© Bing Dall-E 3</figcaption>
+          </figure>
+          <div>
+            <h2>
+              <a href="./detalle-valencia.html" title="Ir a artículo"
+                >Concierto en Valencia</a
+              >
+            </h2>
+            <p>
+              La Plaza de Toros de Valencia fue testigo de un espectáculo
+              inolvidable cuando La Oreja de Van Gogh hizo su parada en la
+              ciudad levantina. Entre los muros históricos de este emblemático
+              lugar, los acordes de canciones como "La Playa" y "20 de Enero"
+              resonaron en el aire, creando una atmósfera mágica que quedará
+              grabada en la memoria de todos los asistentes.
+            </p>
+            <a
+              href="./detalle-valencia.html"
+              title="Ir a artículo"
+              class="leer-mas"
+              >Leer más</a
+            >
+            <span class="autor">
+              Por Sergio Candela -
+              <time datetime="2021-10-15">15 de octubre de 2023</time>
+            </span>
+          </div>
+        </article>
+        <article id="sevilla">
+          <figure>
+            <picture>
+              <!-- Imagen en AVIF a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/sevilla_466.jpeg?as=avif&width=330"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/sevilla_466.jpeg?as=webp&width=330"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/sevilla_466.jpeg?width=330"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                srcset="./images/conciertos/sevilla_466.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                srcset="./images/conciertos/sevilla_466.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 466px -->
+              <source
+                srcset="./images/conciertos/sevilla_466.jpeg"
+                type="image/jpeg"
+              />
+
+              <img
+                src="./images/conciertos/sevilla_466.jpeg"
+                alt="Imagen del grupo cantando en sevilla"
+              />
+            </picture>
+            <figcaption>© Bing Dall-E 3</figcaption>
+          </figure>
+          <div>
+            <h2>
+              <a href="#" title="Ir a artículo">Concierto en Sevilla</a>
+            </h2>
+            <p>
+              El Estadio Benito Villamarín se convirtió en el escenario perfecto
+              para un concierto épico de La Oreja de Van Gogh en Sevilla. Con la
+              ciudad como telón de fondo, el grupo ofreció una actuación
+              inolvidable, llenando el estadio con sus melodías cautivadoras y
+              su energía arrolladora. Desde los primeros acordes hasta el último
+              bis, el público se entregó por completo a la magia de la música en
+              vivo.
+            </p>
+            <a href="#" title="Ir a artículo" class="leer-mas">Leer más</a>
+            <span class="autor">
+              Por Sergio Candela -
+              <time datetime="2021-06-15">15 de junio de 2023</time>
+            </span>
+          </div>
+        </article>
+        <article id="murcia">
+          <figure>
+            <picture>
+              <!-- Imagen en AVIF a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/murcia_466.jpeg?as=avif&width=330"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/murcia_466.jpeg?as=webp&width=330"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 330px -->
+              <source
+                media="(max-width: 330px)"
+                srcset="./images/conciertos/murcia_466.jpeg?width=330"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                srcset="./images/conciertos/murcia_466.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                srcset="./images/conciertos/murcia_466.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 466px -->
+              <source
+                srcset="./images/conciertos/murcia_466.jpeg"
+                type="image/jpeg"
+              />
+
+              <img
+                src="./images/conciertos/murcia_466.jpeg"
+                alt="Imagen del grupo cantando en murcia"
+              />
+            </picture>
+            <figcaption>© Bing Dall-E 3</figcaption>
+          </figure>
+          <div>
+            <h2>
+              <a href="#" title="Ir a artículo">Concierto en Murcia</a>
+            </h2>
+            <p>
+              En una noche estrellada en el Auditorio y Centro de Congresos
+              Víctor Villegas, La Oreja de Van Gogh dejó una huella imborrable
+              en el corazón de Murcia. Con una puesta en escena espectacular y
+              un repertorio que abarcaba todos los rincones de su carrera, el
+              grupo cautivó a los asistentes con su música emotiva y sus letras
+              profundas, creando momentos que perdurarán para siempre en la
+              memoria de quienes estuvieron presentes.
+            </p>
+            <a href="#" title="Ir a artículo" class="leer-mas">Leer más</a>
+            <span class="autor">
+              Por Sergio Candela -
+              <time datetime="2021-02-15">15 de febrero de 2023</time>
+            </span>
+          </div>
+        </article>
+      </section>
+    </main>
+    <include src="src/footer.html"></include>
+  </body>
+</html>

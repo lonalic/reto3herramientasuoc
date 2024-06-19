@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Página de detalle para el concierto de Valencia de la web no oficial del grupo La Oreja de Van Gogh"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <title>
+      Página de detalle para el concierto de Valencia de la web no oficial del
+      grupo La Oreja de Van Gogh
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body class="margins">
+    <include src="src/header.html"></include>
+    <main>
+      <section class="concierto-detalle">
+        <div class="titulo">
+          <h1>Concierto en Valencia</h1>
+        </div>
+        <article>
+          <figure>
+            <picture>
+              <!-- Imagen en AVIF a 465px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/valencia_466.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 465px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/valencia_466.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 466px -->
+              <source
+                media="(max-width: 466px)"
+                srcset="./images/conciertos/valencia_466.jpeg"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/valencia_768.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/valencia_768.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPEG a 768px -->
+              <source
+                media="(max-width: 768px)"
+                srcset="./images/conciertos/valencia_768.jpeg?width=768"
+                type="image/jpeg"
+              />
+              <!-- Imagen en AVIF-->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/valencia-full.jpeg?as=avif"
+                type="image/avif"
+              />
+              <!-- Imagen en WebP-->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/valencia-full.jpeg?as=webp"
+                type="image/webp"
+              />
+              <!-- Imagen en JPG -->
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/conciertos/valencia-full.jpeg"
+                type="image/jpeg"
+              />
+              <!-- Imagen en JPEG por defecto -->
+              <img
+                class="expandir-100"
+                src="./images/conciertos/valencia-full.jpeg"
+                alt="Imagen del grupo cantando en valencia"
+              />
+            </picture>
+            <figcaption>© Bing Dall-E 3</figcaption>
+          </figure>
+          <div>
+            <h2>
+              <a href="./detalle-valencia.html" title="Ir a artículo"
+                >Concierto en Valencia</a
+              >
+            </h2>
+            <p>
+              Bajo el cielo estrellado de Valencia, la Plaza de Toros se
+              transformó en el escenario de un concierto épico que quedará
+              grabado en la historia de la música. Cuando La Oreja de Van Gogh
+              hizo su esperada parada en la ciudad levantina, miles de fans se
+              congregaron para ser testigos de un espectáculo inolvidable. Desde
+              el momento en que los primeros acordes resonaron en el aire hasta
+              el último bis, la energía en el ambiente era palpable, con una
+              atmósfera de entusiasmo y emoción que envolvía a todos los
+              presentes.
+            </p>
+            <img
+              class="microfono-20"
+              width="70"
+              height="70"
+              src="./images/microfono.svg"
+              alt="Representación de micrófono"
+            />
+            <p>
+              Con una puesta en escena espectacular y una entrega total por
+              parte de la banda, el concierto en Valencia fue un viaje musical
+              lleno de momentos emocionantes y memorables. Desde los clásicos
+              que han marcado una generación hasta las nuevas canciones que
+              conquistan corazones, La Oreja de Van Gogh supo cautivar a la
+              audiencia con su talento y pasión. Canciones como "La Playa", "20
+              de Enero" y "Deseos de Cosas Imposibles" resonaron en la plaza,
+              creando una sinfonía de emociones que se fundían con la magia de
+              la noche.
+            </p>
+            <p>
+              Pero más allá de la música, lo que hizo que este concierto fuera
+              verdaderamente especial fue el ambiente único que se creó entre la
+              banda y su público. En medio de la euforia y la alegría, hubo
+              momentos de intimidad y conexión genuina, donde La Oreja de Van
+              Gogh compartió historias y emociones con sus seguidores. Fue esta
+              complicidad entre artistas y admiradores lo que convirtió el
+              concierto en Valencia en una experiencia única, un encuentro
+              mágico entre la música y el alma de una ciudad que quedará grabado
+              en la memoria de todos los que tuvieron la suerte de presenciarlo.
+            </p>
+            <span class="autor">
+              Por Sergio Candela -
+              <time datetime="2021-10-15">15 de octubre de 2023</time>
+            </span>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h3>Conciertos relacionados</h3>
+        <ul>
+          <li>
+            <a href="detalle-barcelona.html" title="Ir a concierto de Barcelona"
+              >Concierto de Barcelona</a
+            >
+          </li>
+          <li>
+            <a href="conciertos.html#murcia" title="Ir a concierto de Murcia"
+              >Concierto de Murcia</a
+            >
+          </li>
+          <li>
+            <a
+              href="conciertos.html#valencia"
+              title="Ir a concierto de Valencia"
+              >Concierto de Valencia</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <include src="src/footer.html"></include>
+  </body>
+</html>

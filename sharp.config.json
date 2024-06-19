@@ -1,0 +1,4 @@
+{
+  "webp": { "width": 400, "quality": 60 },
+  "avif": { "width": 400, "quality": 50 }
+}

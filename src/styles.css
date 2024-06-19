@@ -1,0 +1,475 @@
+/* Variables para colores y fuentes */
+:root {
+  --fuenteH1: 2.2rem;
+  --fuenteH2: 1.3rem;
+  --fuenteH3: 1.1rem;
+  --fuenteMasPequena: 0.6rem;
+  --fuenteSuperPequena: 0.8rem;
+  --fuentePequena: 1rem;
+  --fuentePequenaExtra: 1.2rem;
+  --fuenteMedia: 1.5rem;
+  --fuenteGrande: 2rem;
+  --texto: #1d1c1c;
+  --contrario: #55109f;
+  --fondoClaro: #c0ffee;
+  --fondoOscuro: #bada55;
+  --fondoBoton: #7edbbc;
+  --fondoBotonHover: #0a366b;
+  --fondoBloqueLista: #f0f0f0;
+  --fondoEnlace: #2a5685;
+  --fondoenlaceHover: #03254e;
+  --fondoExito: #44af48;
+  --fondoError: #db8585;
+  --logo: #596b1e;
+}
+
+h1 {
+  font-size: var(--fuenteH1);
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: var(--fuenteH2);
+}
+
+h3 {
+  font-size: var(--fuenteH3);
+  margin: 5px 0;
+}
+
+/* Estilos generales para toda la web */
+
+html,
+body {
+  color: #1f1f1f;
+  background: linear-gradient(to bottom, var(--fondoOscuro), var(--fondoClaro));
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--fuenteMedia);
+  line-height: 1.5rem;
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-size: var(--fuenteMasPequena);
+  font-style: italic;
+  text-align: center;
+}
+
+.margins {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilos para el header */
+
+header div.logo {
+  text-align: center;
+  display: block;
+  font-size: var(--fuenteGrande);
+  margin-bottom: 20px;
+  color: var(--logo);
+  text-shadow: 1px 1px 8px var(--fondoBloqueLista),
+    1px 2px 1px var(--fondoClaro);
+}
+
+header,
+footer {
+  font-size: var(--fuentePequena);
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* Estilos generales aplicables a la mayoría de los cuerpos de las páginas */
+
+main {
+  text-align: center;
+  flex: 1;
+  font-size: var(--fuentePequena);
+}
+
+main .titulo {
+  text-align: center;
+  animation: animar 4s infinite;
+}
+
+/* Animación css */
+
+@keyframes animar {
+  0% {
+    transform: translateX(0);
+    color: var(--logo);
+  }
+  25% {
+    transform: translateX(-30px);
+    color: var(--fondoBotonHover);
+  }
+  50% {
+    transform: translateX(-60px);
+    color: var(--contrario);
+  }
+  75% {
+    transform: translateX(-30px);
+    color: var(--fondoBotonHover);
+  }
+  100% {
+    transform: translateX(0);
+    color: var(--logo);
+  }
+}
+
+/* Estilos para imagenes */
+
+img.expandir-100 {
+  width: 100%;
+}
+
+main.index img {
+  max-width: 1200px;
+  height: auto;
+}
+
+.microfono-20 {
+  width: 20%;
+}
+
+.estrella-efecto {
+  width: 100%;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+svg.sobre:hover .solapa {
+  transform: translateY(-16px);
+}
+
+.solapa {
+  transition: transform 1s;
+  transform-origin: center bottom;
+}
+
+/* Estilos para concierto detalle y conciertos */
+
+main .concierto-detalle {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fuentePequena);
+}
+
+main .conciertos-lista {
+  display: grid;
+  font-size: var(--fuentePequena);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+main .conciertos-lista > div {
+  /* Excluir el título del grid */
+  grid-column: 1 / -1;
+}
+
+main .conciertos-lista a,
+main .concierto-detalle a {
+  color: var(--fondoEnlace);
+}
+
+main .conciertos-lista a:hover,
+main .concierto-detalle a:hover {
+  color: var(--fondoenlaceHover);
+}
+
+main .conciertos-lista article,
+main .concierto-detalle article {
+  border: 1px solid var(--fondoBotonHover);
+  background-color: var(--fondoBloqueLista);
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+main .conciertos-lista article img {
+  max-width: 100%;
+  height: auto;
+}
+
+main .concierto-detalle article img {
+  max-width: 50%;
+  height: auto;
+}
+
+main .conciertos-lista article figure {
+  margin: 0;
+}
+
+main .conciertos-lista article .autor,
+main .concierto-detalle article .autor {
+  font-size: var(--fuenteMasPequena);
+  font-style: italic;
+}
+
+main .conciertos-lista article .leer-mas,
+main .concierto-detalle article .leer-mas {
+  display: block;
+}
+
+section.conciertos-relacionados {
+  margin-bottom: 20px;
+}
+
+section.conciertos-relacionados ul a,
+main .listado-enlaces a {
+  color: var(--fondoEnlace);
+}
+
+section.conciertos-relacionados ul a:hover,
+main .listado-enlaces a:hover {
+  color: var(--fondoenlaceHover);
+}
+
+main.presentacion {
+  margin-bottom: 60px;
+}
+
+/* Estilos para el formulario */
+
+.formulario {
+  border: 1px solid var(--fondoBotonHover);
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto .campo {
+  margin-bottom: 15px;
+}
+
+.contacto label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contacto input[type='text'],
+.contacto textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contacto button {
+  padding: 10px 20px;
+  background-color: var(--fondoBotonHover);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contacto .mensaje-enviado,
+.mensaje-error {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--fondoExito);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+}
+
+.contacto .mensaje-error {
+  display: none;
+  background-color: var(--fondoError);
+}
+
+.contacto .campo-invalido {
+  background-color: var(--fondoError);
+}
+
+/* Estilos para los enlaces */
+
+main .listado-enlaces {
+  border: 1px solid var(--fondoBotonHover);
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .listado-enlaces > ul > li > ul {
+  margin-bottom: 60px;
+}
+
+/* Estilos para footer */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: var(--fuentePequena);
+}
+
+footer .copyright {
+  color: var(--logo);
+}
+
+footer nav {
+  flex: 1 1 100%;
+}
+
+footer ul li {
+  margin: 0;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+footer a {
+  color: var(--texto);
+}
+
+footer a:hover {
+  color: var(--fondoBotonHover);
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer nav li {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid var(--fondoBotonHover);
+  border-radius: 5px;
+  background-color: var(--fondoBoton);
+}
+
+/* Estilos para los vídeos de youtube */
+
+main.presentacion .video {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Para dar una relación de aspecto de 16:9 */
+  overflow: hidden;
+  max-width: 800px;
+}
+
+main.presentacion iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media only screen and (min-width: 1025px) {
+  main .concierto-detalle article img {
+    max-width: 1024px;
+  }
+}
+
+/* Estilos para media query de tablet */
+
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  header nav li {
+    margin: 0 0 2px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  main.presentacion .video {
+    max-width: 100%;
+  }
+
+  main .concierto-detalle,
+  main .conciertos-lista {
+    font-size: var(--fuenteSuperPequena);
+  }
+
+  main .conciertos-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .concierto-detalle article img {
+    max-width: 100%;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: var(--fuenteMasPequena);
+  }
+}
+
+/* Estilos para media query de móvil */
+
+@media only screen and (max-width: 466px) {
+  header div.logo {
+    font-size: var(--fuentePequenaExtra);
+    letter-spacing: -2px;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+  main .conciertos-lista {
+    grid-template-columns: 1fr;
+  }
+  main .concierto-detalle article img {
+    max-width: 100%;
+  }
+}
