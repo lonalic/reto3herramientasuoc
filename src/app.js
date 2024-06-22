@@ -70,4 +70,13 @@ function generaFavicon() {
   faviconMarquee.start();
 }
 
-window.onload = generaFavicon;
+import Lazyframe from 'lazyframe';
+
+function iniciaLazyframe() {
+  Lazyframe('main.presentacion .video');
+}
+
+window.onload = function () {
+  iniciaLazyframe();
+  generaFavicon();
+};

@@ -413,6 +413,13 @@ main.presentacion iframe {
   border: 0;
 }
 
+main.presentacion .video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(5);
+}
+
 @media only screen and (min-width: 1025px) {
   main .concierto-detalle article img {
     max-width: 1024px;

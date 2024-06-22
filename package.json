@@ -21,6 +21,7 @@
     "sharp": "^0.31.1"
   },
   "dependencies": {
-    "favicon-marquee": "^2.1.0"
+    "favicon-marquee": "^2.1.0",
+    "lazyframe": "^2.2.7"
   }
 }
