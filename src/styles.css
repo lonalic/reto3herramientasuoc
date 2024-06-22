@@ -17,6 +17,7 @@
   --fondoBotonHover: #0a366b;
   --fondoBloqueLista: #f0f0f0;
   --fondoEnlace: #2a5685;
+  --fondoEnlaceFondoBlanco: #146cca;
   --fondoenlaceHover: #03254e;
   --fondoExito: #44af48;
   --fondoError: #db8585;
@@ -246,9 +247,13 @@ section.conciertos-relacionados {
   margin-bottom: 20px;
 }
 
-section.conciertos-relacionados ul a,
-main .listado-enlaces a {
+section.conciertos-relacionados ul a {
   color: var(--fondoEnlace);
+}
+
+main .listado-enlaces a {
+  color: var(--fondoEnlaceFondoBlanco);
+  font-weight: bold;
 }
 
 section.conciertos-relacionados ul a:hover,
