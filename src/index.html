@@ -11,7 +11,7 @@
       Página de inicio de la web no oficial del grupo La Oreja de Van Gogh
     </title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
+    <script defer type="module" src="app.js"></script>
   </head>
   <body class="margins">
     <include src="src/header.html"></include>
@@ -117,6 +117,7 @@
             <source srcset="./images/portada.jpeg?as=webp" type="image/webp" />
             <source srcset="./images/portada.jpeg" type="image/jpeg" />
             <img
+              loading="lazy"
               class="expandir-100"
               src="./images/portada.jpeg"
               alt="Imagen de una representación del grupo en un concierto"
