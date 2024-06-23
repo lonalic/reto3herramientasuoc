@@ -408,6 +408,8 @@ main.presentacion .video {
   padding-top: 56.25%; /* Para dar una relación de aspecto de 16:9 */
   overflow: hidden;
   max-width: 800px;
+  background-size: cover;
+  background-position: center;
 }
 
 main.presentacion iframe {
